@@ -1,14 +1,16 @@
+require_relative 'role'
 class Employee
 
-  attr_reader :name, :role, :reportees, :manager, :salary
+  attr_reader :name, :role, :reportees, :manager, :salary, :organisation
   attr_writer :manager
-  def initialize(name, role, manager, salary, org = nil)
+  def initialize(name, role, manager, salary, organisation = nil)
     @name = name
     @role = role
     @salary = salary
     set_manager(manager)
     @reportees = []
-    org.add_employee(self) if org
+    @organisation = organisation
+    organisation.add_employee(self) if organisation
   end
 
   def add_direct_reportees(employee)
@@ -29,10 +31,6 @@ class Employee
 
   def get_authority_level
     Role.authority_level(@role)
-  end
-
-  def self.find_common_manager(employee1, employee2)
-
   end
 
 end

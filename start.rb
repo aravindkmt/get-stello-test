@@ -20,8 +20,7 @@ class Start
     engineer2 = Employee.new('Jenny Doe', :engineer, manager, 50000, @organisation)
     engineer3 = Employee.new('Jerry Doe', :engineer, director, 50000, @organisation)
     consultant = Employee.new('Judy Doe', :engineer, cto, 50000, @organisation)
-    consultant_cto = Employee.new('Jasper Doe', :engineer, cto, 50000, @organisation)
-    org
+    consultant_ceo = Employee.new('Jasper Doe', :engineer, ceo, 50000, @organisation)
   end
 
   def organisation

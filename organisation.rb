@@ -29,15 +29,43 @@ class Organisation
     @employee_with_max_reportees
   end
 
-  def find_employee_by_name(name)
-    @employees.find { |employee| employee.name == name }
+  def find_common_manager(employee_name_1, employee_name_2)
+    employee1 = find_employee_by_name(employee_name_1)
+    employee2 = find_employee_by_name(employee_name_2)
+
+    managers1 = Set.new
+    ceo = self.ceo
+    common_manager = ceo
+
+    current_employee_1 = employee1
+    while current_employee_1 != ceo
+      managers1.add(current_employee_1)
+      current_employee_1 = current_employee_1.manager
+    end
+
+    current_employee_2 = employee2
+    while current_employee_2 != ceo
+      if managers1.include?(current_employee_2)
+        common_manager = current_employee_2
+        break
+      end
+      current_employee_2 = current_employee_2.manager
+    end
+
+    common_manager = employee1.manager if common_manager == employee1
+    common_manager = employee2.manager if common_manager == employee2
+
+    common_manager
   end
 
-  private
   def update_employee_with_max_reportees(employee)
     if employee.manager.reportees.length > @employee_with_max_reportees.reportees.length
-      @employee_with_max_reportees = employee
+      @employee_with_max_reportees = employee.manager
     end
+  end
+
+  def find_employee_by_name(name)
+    @employees.find { |employee| employee.name == name }
   end
 
 end
