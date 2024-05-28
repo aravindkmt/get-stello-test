@@ -75,3 +75,19 @@ test.setup
 test.execute
 ```
 
+## Frontend:
+Frontend is implemented using React. The frontend code is in the `get-stello-app` directory.
+
+## How to run the frontend code:
+1. Navigate to the `get-stello-app` directory.
+2. Run the following command in the terminal:
+`npm install`
+`npm start`
+3. Open the browser and navigate to `http://localhost:3000/` to view the frontend.
+
+
+# Demo:
+
+# Screenshot:
+
+![img.png](img.png)
