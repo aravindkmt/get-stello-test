@@ -1,0 +1,37 @@
+.orgNode {
+    padding: 10px;
+    text-align: center;
+}
+
+.orgNode .name {
+    font-weight: bold;
+    color: purple;
+}
+
+.orgNode .selectedName {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.orgNode .disabledName {
+    color: grey;
+    font-weight: bold;
+    pointer: none;
+}
+
+.orgNode .name:hover {
+    color: forestgreen;
+    cursor: pointer;
+}
+
+.orgNode .role {
+    color: deeppink;
+    font-style: italic;
+    font-size: small;
+}
+.orgNode .department {
+    color: lightpink;
+    font-style: italic;
+    font-size: small;
+}
+

@@ -58,6 +58,15 @@ class Organisation
     common_manager
   end
 
+  def to_h
+    {
+      'name' => @name,
+      'ceo' => @ceo.to_h,
+      'employees' => @employees.map(&:to_h)
+    }
+  end
+
+  private
   def update_employee_with_max_reportees(employee)
     if employee.manager.reportees.length > @employee_with_max_reportees.reportees.length
       @employee_with_max_reportees = employee.manager

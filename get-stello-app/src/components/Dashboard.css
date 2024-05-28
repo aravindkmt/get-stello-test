@@ -1,0 +1,9 @@
+.dashboardLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+

@@ -1,12 +1,13 @@
 require_relative 'role'
 class Employee
 
-  attr_reader :name, :role, :reportees, :manager, :salary, :organisation
+  attr_reader :name, :role, :reportees, :manager, :salary, :department, :organisation
   attr_writer :manager
-  def initialize(name, role, manager, salary, organisation = nil)
+  def initialize(name, role, manager, salary, department, organisation = nil)
     @name = name
     @role = role
     @salary = salary
+    @department = department
     set_manager(manager)
     @reportees = []
     @organisation = organisation
@@ -27,6 +28,17 @@ class Employee
     else
       raise "Manager authority level is less than employee"
     end
+  end
+
+  def to_h
+    {
+      name: @name,
+      role: @role,
+      salary: @salary,
+      department: @department,
+      reportees: @reportees.map(&:to_h),
+      manager: @manager.name
+    }
   end
 
   def get_authority_level

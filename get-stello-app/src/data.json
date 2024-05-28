@@ -1,0 +1,486 @@
+{
+  "name": "Acme Inc.",
+  "ceo": {
+    "name": "John Doe",
+    "role": "ceo",
+    "salary": 100000,
+    "department": "corporate",
+    "reportees": [
+      {
+        "name": "Jane Doe",
+        "role": "cto",
+        "salary": 90000,
+        "department": "corporate",
+        "reportees": [
+          {
+            "name": "Tom Doe",
+            "role": "director",
+            "salary": 70000,
+            "department": "engineering",
+            "reportees": [
+              {
+                "name": "Tim Doe",
+                "role": "manager",
+                "salary": 60000,
+                "department": "engineering",
+                "reportees": [
+                  {
+                    "name": "Joe Doe",
+                    "role": "engineer",
+                    "salary": 50000,
+                    "department": "engineering",
+                    "reportees": [],
+                    "manager": "Tim Doe"
+                  },
+                  {
+                    "name": "Jenny Doe",
+                    "role": "engineer",
+                    "salary": 50000,
+                    "department": "engineering",
+                    "reportees": [],
+                    "manager": "Tim Doe"
+                  }
+                ],
+                "manager": "Tom Doe"
+              }
+            ],
+            "manager": "Jane Doe"
+          }
+        ],
+        "manager": "John Doe"
+      },
+      {
+        "name": "Jackie Doe",
+        "role": "coo",
+        "salary": 90000,
+        "department": "corporate",
+        "reportees": [
+          {
+            "name": "James Deo",
+            "role": "manager",
+            "salary": 60000,
+            "department": "hr",
+            "reportees": [
+              {
+                "name": "Jerri Doe",
+                "role": "employee",
+                "salary": 50000,
+                "department": "hr",
+                "reportees": [],
+                "manager": "James Deo"
+              }
+            ],
+            "manager": "Jackie Doe"
+          }
+        ],
+        "manager": "John Doe"
+      },
+      {
+        "name": "Jim Doe",
+        "role": "vp",
+        "salary": 80000,
+        "department": "sales",
+        "reportees": [
+          {
+            "name": "Jack Doe",
+            "role": "director",
+            "salary": 70000,
+            "department": "sales",
+            "reportees": [
+              {
+                "name": "Jill Doe",
+                "role": "manager",
+                "salary": 60000,
+                "department": "sales",
+                "reportees": [
+                  {
+                    "name": "Jerry Doe",
+                    "role": "employee",
+                    "salary": 50000,
+                    "department": "sales",
+                    "reportees": [],
+                    "manager": "Jill Doe"
+                  }
+                ],
+                "manager": "Jack Doe"
+              }
+            ],
+            "manager": "Jim Doe"
+          }
+        ],
+        "manager": "John Doe"
+      }
+    ],
+    "manager": "John Doe"
+  },
+  "employees": [
+    {
+      "name": "John Doe",
+      "role": "ceo",
+      "salary": 100000,
+      "department": "corporate",
+      "reportees": [
+        {
+          "name": "Jane Doe",
+          "role": "cto",
+          "salary": 90000,
+          "department": "corporate",
+          "reportees": [
+            {
+              "name": "Tom Doe",
+              "role": "director",
+              "salary": 70000,
+              "department": "engineering",
+              "reportees": [
+                {
+                  "name": "Tim Doe",
+                  "role": "manager",
+                  "salary": 60000,
+                  "department": "engineering",
+                  "reportees": [
+                    {
+                      "name": "Joe Doe",
+                      "role": "engineer",
+                      "salary": 50000,
+                      "department": "engineering",
+                      "reportees": [],
+                      "manager": "Tim Doe"
+                    },
+                    {
+                      "name": "Jenny Doe",
+                      "role": "engineer",
+                      "salary": 50000,
+                      "department": "engineering",
+                      "reportees": [],
+                      "manager": "Tim Doe"
+                    }
+                  ],
+                  "manager": "Tom Doe"
+                }
+              ],
+              "manager": "Jane Doe"
+            }
+          ],
+          "manager": "John Doe"
+        },
+        {
+          "name": "Jackie Doe",
+          "role": "coo",
+          "salary": 90000,
+          "department": "corporate",
+          "reportees": [
+            {
+              "name": "James Deo",
+              "role": "manager",
+              "salary": 60000,
+              "department": "hr",
+              "reportees": [
+                {
+                  "name": "Jerri Doe",
+                  "role": "employee",
+                  "salary": 50000,
+                  "department": "hr",
+                  "reportees": [],
+                  "manager": "James Deo"
+                }
+              ],
+              "manager": "Jackie Doe"
+            }
+          ],
+          "manager": "John Doe"
+        },
+        {
+          "name": "Jim Doe",
+          "role": "vp",
+          "salary": 80000,
+          "department": "sales",
+          "reportees": [
+            {
+              "name": "Jack Doe",
+              "role": "director",
+              "salary": 70000,
+              "department": "sales",
+              "reportees": [
+                {
+                  "name": "Jill Doe",
+                  "role": "manager",
+                  "salary": 60000,
+                  "department": "sales",
+                  "reportees": [
+                    {
+                      "name": "Jerry Doe",
+                      "role": "employee",
+                      "salary": 50000,
+                      "department": "sales",
+                      "reportees": [],
+                      "manager": "Jill Doe"
+                    }
+                  ],
+                  "manager": "Jack Doe"
+                }
+              ],
+              "manager": "Jim Doe"
+            }
+          ],
+          "manager": "John Doe"
+        }
+      ],
+      "manager": "John Doe"
+    },
+    {
+      "name": "Jane Doe",
+      "role": "cto",
+      "salary": 90000,
+      "department": "corporate",
+      "reportees": [
+        {
+          "name": "Tom Doe",
+          "role": "director",
+          "salary": 70000,
+          "department": "engineering",
+          "reportees": [
+            {
+              "name": "Tim Doe",
+              "role": "manager",
+              "salary": 60000,
+              "department": "engineering",
+              "reportees": [
+                {
+                  "name": "Joe Doe",
+                  "role": "engineer",
+                  "salary": 50000,
+                  "department": "engineering",
+                  "reportees": [],
+                  "manager": "Tim Doe"
+                },
+                {
+                  "name": "Jenny Doe",
+                  "role": "engineer",
+                  "salary": 50000,
+                  "department": "engineering",
+                  "reportees": [],
+                  "manager": "Tim Doe"
+                }
+              ],
+              "manager": "Tom Doe"
+            }
+          ],
+          "manager": "Jane Doe"
+        }
+      ],
+      "manager": "John Doe"
+    },
+    {
+      "name": "Tom Doe",
+      "role": "director",
+      "salary": 70000,
+      "department": "engineering",
+      "reportees": [
+        {
+          "name": "Tim Doe",
+          "role": "manager",
+          "salary": 60000,
+          "department": "engineering",
+          "reportees": [
+            {
+              "name": "Joe Doe",
+              "role": "engineer",
+              "salary": 50000,
+              "department": "engineering",
+              "reportees": [],
+              "manager": "Tim Doe"
+            },
+            {
+              "name": "Jenny Doe",
+              "role": "engineer",
+              "salary": 50000,
+              "department": "engineering",
+              "reportees": [],
+              "manager": "Tim Doe"
+            }
+          ],
+          "manager": "Tom Doe"
+        }
+      ],
+      "manager": "Jane Doe"
+    },
+    {
+      "name": "Tim Doe",
+      "role": "manager",
+      "salary": 60000,
+      "department": "engineering",
+      "reportees": [
+        {
+          "name": "Joe Doe",
+          "role": "engineer",
+          "salary": 50000,
+          "department": "engineering",
+          "reportees": [],
+          "manager": "Tim Doe"
+        },
+        {
+          "name": "Jenny Doe",
+          "role": "engineer",
+          "salary": 50000,
+          "department": "engineering",
+          "reportees": [],
+          "manager": "Tim Doe"
+        }
+      ],
+      "manager": "Tom Doe"
+    },
+    {
+      "name": "Joe Doe",
+      "role": "engineer",
+      "salary": 50000,
+      "department": "engineering",
+      "reportees": [],
+      "manager": "Tim Doe"
+    },
+    {
+      "name": "Jenny Doe",
+      "role": "engineer",
+      "salary": 50000,
+      "department": "engineering",
+      "reportees": [],
+      "manager": "Tim Doe"
+    },
+    {
+      "name": "Jackie Doe",
+      "role": "coo",
+      "salary": 90000,
+      "department": "corporate",
+      "reportees": [
+        {
+          "name": "James Deo",
+          "role": "manager",
+          "salary": 60000,
+          "department": "hr",
+          "reportees": [
+            {
+              "name": "Jerri Doe",
+              "role": "employee",
+              "salary": 50000,
+              "department": "hr",
+              "reportees": [],
+              "manager": "James Deo"
+            }
+          ],
+          "manager": "Jackie Doe"
+        }
+      ],
+      "manager": "John Doe"
+    },
+    {
+      "name": "James Deo",
+      "role": "manager",
+      "salary": 60000,
+      "department": "hr",
+      "reportees": [
+        {
+          "name": "Jerri Doe",
+          "role": "employee",
+          "salary": 50000,
+          "department": "hr",
+          "reportees": [],
+          "manager": "James Deo"
+        }
+      ],
+      "manager": "Jackie Doe"
+    },
+    {
+      "name": "Jerri Doe",
+      "role": "employee",
+      "salary": 50000,
+      "department": "hr",
+      "reportees": [],
+      "manager": "James Deo"
+    },
+    {
+      "name": "Jim Doe",
+      "role": "vp",
+      "salary": 80000,
+      "department": "sales",
+      "reportees": [
+        {
+          "name": "Jack Doe",
+          "role": "director",
+          "salary": 70000,
+          "department": "sales",
+          "reportees": [
+            {
+              "name": "Jill Doe",
+              "role": "manager",
+              "salary": 60000,
+              "department": "sales",
+              "reportees": [
+                {
+                  "name": "Jerry Doe",
+                  "role": "employee",
+                  "salary": 50000,
+                  "department": "sales",
+                  "reportees": [],
+                  "manager": "Jill Doe"
+                }
+              ],
+              "manager": "Jack Doe"
+            }
+          ],
+          "manager": "Jim Doe"
+        }
+      ],
+      "manager": "John Doe"
+    },
+    {
+      "name": "Jack Doe",
+      "role": "director",
+      "salary": 70000,
+      "department": "sales",
+      "reportees": [
+        {
+          "name": "Jill Doe",
+          "role": "manager",
+          "salary": 60000,
+          "department": "sales",
+          "reportees": [
+            {
+              "name": "Jerry Doe",
+              "role": "employee",
+              "salary": 50000,
+              "department": "sales",
+              "reportees": [],
+              "manager": "Jill Doe"
+            }
+          ],
+          "manager": "Jack Doe"
+        }
+      ],
+      "manager": "Jim Doe"
+    },
+    {
+      "name": "Jill Doe",
+      "role": "manager",
+      "salary": 60000,
+      "department": "sales",
+      "reportees": [
+        {
+          "name": "Jerry Doe",
+          "role": "employee",
+          "salary": 50000,
+          "department": "sales",
+          "reportees": [],
+          "manager": "Jill Doe"
+        }
+      ],
+      "manager": "Jack Doe"
+    },
+    {
+      "name": "Jerry Doe",
+      "role": "employee",
+      "salary": 50000,
+      "department": "sales",
+      "reportees": [],
+      "manager": "Jill Doe"
+    }
+  ]
+}

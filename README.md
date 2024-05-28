@@ -44,6 +44,10 @@ To allow flexibility in the organizational structure, we allow employee to have 
 1. Find_max_number_of_direct_reports() — This function returns the employee with the highest number of direct reports.
 2. Find_common_manager(employee1, employee2) — This function returns the lowest level of common manager of any given 2 employees.
 
+## Unit Tests:
+Unit tests are written using normal class file to keep the solution simple. The tests are written to test the functions of the organization class.
+`OrganizationTest` class is used to test the organization class functions.
+
 ## How to run the code:
 ### Installation:
 1. Install IRB https://github.com/ruby/irb?tab=readme-ov-file#installation
@@ -61,7 +65,13 @@ To allow flexibility in the organizational structure, we allow employee to have 
 6. Find the employee with the highest number of direct reports:
 `organization.find_max_number_of_direct_reports`
 7. Find the common manager of two employees:
-`Employee1 = organization.find_employee_by_name('Employee1')`
-`Employee2 = organization.find_employee_by_name('Employee2')`
-`Employee.find_common_manager(Employee1, Employee2)`
+`organization.find_common_manager('Employee1', 'Employee2')`
+
+### Running unit tests:
+```
+require_relative 'organization_test'
+test = OrganizationTest.new
+test.setup
+test.execute
+```
 

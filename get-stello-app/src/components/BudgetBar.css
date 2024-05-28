@@ -1,0 +1,37 @@
+.budgetBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.budgetBar .progressContainer {
+    position: relative;
+    width: 400px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.budgetBar progress {
+    appearance: none;
+    width: 100%;
+    height: 100%;
+}
+
+.budgetBar progress::-webkit-progress-bar {
+    background-color: lavender;
+    border-radius: 100px;
+}
+
+.budgetBar progress::-webkit-progress-value {
+    background-color: mediumpurple;
+    border-radius: 100px;
+    background-size: 25px 20px, 100% 100%, 100% 100%;
+}
+
+.budgetBar .percentage {
+    width: 50px;
+    text-align: right;
+}

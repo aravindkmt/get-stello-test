@@ -54,3 +54,26 @@ build-iPhoneSimulator/
 
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/get-stello-app/node_modules
+/get-stello-app/.pnp
+/get-stello-app/.pnp.js
+
+# testing
+/get-stello-app/coverage
+
+# production
+/get-stello-app/build
+
+# misc
+/get-stello-app.DS_Store
+/get-stello-app/.env.local
+/get-stello-app/.env.development.local
+/get-stello-app/.env.test.local
+/get-stello-app/.env.production.local
+
+/get-stello-app/npm-debug.log*
+/get-stello-app/yarn-debug.log*
+/get-stello-app/yarn-error.log*
