@@ -90,6 +90,10 @@ Frontend is implemented using React. The frontend code is in the `get-stello-app
 
 
 
+https://github.com/aravindkmt/get-stello-test/assets/18696721/5a59f359-4bbc-4adc-a012-5266cdde0b62
+
+
+
 # Screenshot:
 
 ![img.png](img.png)
