@@ -1,11 +1,5 @@
 # get-stello-test
 
-Welcome to the Technical Exercise stage of Stello AI!
-Stello AI is an HR Technology startup building AI-enabled platform for Enterprises to manage their compensation practices. 
-We create Compensation solutions for thousands of employees and business leaders. Please complete the below data structure, 
-function and frontend questions on a separate Github link and send that to us, so we can better understand your 
-technical capability. You can also just send on a Google document, whichever is easier for you.
-
 ### Data Structures:
     a. Create a data structure that supports a flexible organizational structure.  
         Examples: Employee -> Manager -> Director -> VP -> CTO -> CEO
