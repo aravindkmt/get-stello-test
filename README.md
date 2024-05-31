@@ -1,4 +1,4 @@
-# get-stello-test
+# Organisation tree
 
 ### Data Structures:
     a. Create a data structure that supports a flexible organizational structure.  
